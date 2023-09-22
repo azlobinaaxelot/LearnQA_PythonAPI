@@ -4,3 +4,7 @@ json_text = '{"messages":[{"message":"This is the first message","timestamp":"20
 obj = json.loads(json_text)
 print(obj['messages'][1])
 
+
+
+
+
