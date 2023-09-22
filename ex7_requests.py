@@ -14,15 +14,19 @@ params = {"method": method}
 
 if method == 'GET':
     response = requests.get("https://playground.learnqa.ru/ajax/api/compare_query_type", params=method)
+    print(response.text)
 
 if method == 'POST':
     response = requests.post("https://playground.learnqa.ru/ajax/api/compare_query_type", data=method)
+    print(response.text)
 
 if method == 'PUT':
     response = requests.put("https://playground.learnqa.ru/ajax/api/compare_query_type", data=method)
+    print(response.text)
 
 if method == 'DELETE':
     response = requests.delete("https://playground.learnqa.ru/ajax/api/compare_query_type", data=method)
+    print(response.text)
 
 #4
 def output_params(method, param, response):
